@@ -1,5 +1,2 @@
-.idea
-node_modules
-package-lock.json
-/report*
-mix-manifest.json
+/node_modules
+/mix-manifest.json

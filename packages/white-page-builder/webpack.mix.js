@@ -1,7 +1,7 @@
 const mix = require("laravel-mix");
 
-mix.js("src/js/pageBuilder.js", "dist")
-  .js("src/js/main.js", "dist/js")
+mix.js("src/index.js", "dist")
+  .js("src/example.js", "dist")
   .sass("src/sass/pageBuilder.sass", "dist/css")
   .sass("src/sass/theme/voyager.sass", "dist/css/theme")
   .sass("src/sass/main.sass", "dist/css")
@@ -13,6 +13,10 @@ mix.js("src/js/pageBuilder.js", "dist")
   .options({
     autoprefixer: false
   })
+  .sourceMaps()
+  .browserSync({
+    proxy: 'http://localhost:8000'
+  });
 // .options({
 //   processCssUrls: false,
 //   postCss: [

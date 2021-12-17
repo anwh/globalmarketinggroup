@@ -1,13 +1,15 @@
 {
-  "name": "@koterion/page_builder",
-  "version": "1.2.2",
-  "description": "Plugin for create page structure",
+  "name": "@globalmarketinggroup/white-page-builder",
+  "version": "1.0.0",
   "scripts": {
+    "dev": "yarn dev",
     "development": "mix",
     "watch": "mix watch",
     "watch-poll": "mix watch -- --watch-options-poll=1000",
     "hot": "mix watch --hot",
-    "production": "mix --production"
+    "prod": "yarn prod",
+    "production": "mix --production",
+    "serve": "php -S localhost:8000"
   },
   "standard": {
     "envs": {
@@ -27,13 +29,10 @@
   ],
   "style": "dist/css/pageBuilder.css",
   "main": "dist/pageBuilder.js",
-  "author": "koterion",
   "license": "MIT",
   "devDependencies": {
     "resolve-url-loader": "^4.0.0",
     "sanitize.css": "^11.0.0",
-    "sass": "^1.45.0",
-    "sass-loader": "^12.1.0",
     "tinymce": "^5.0.14"
   }
 }

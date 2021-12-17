@@ -35,7 +35,7 @@ $light: #fff
     &:active
       border-color: #5cfd95
 
-.pgBld
+.pg-bld
   background-color: $gray
   padding: 13px
   overflow: auto
@@ -98,7 +98,7 @@ $light: #fff
         &:active
           border-color: #00a651
 
-  &-row
+  &__row
     position: relative
     display: flex
     flex-wrap: wrap
@@ -128,7 +128,7 @@ $light: #fff
       width: 100%
 
     &.changing
-      .pgBld-row-menu
+      .pg-bld__row-menu
         cursor: default
 
         &-block
@@ -139,10 +139,10 @@ $light: #fff
             text-decoration: underline
 
       &[data-action = 'edit']
-        .pgBld-col
+        .pg-bld-col
           display: none
 
-        .pgBld-settings
+        .pg-bld-settings
           display: flex
 
 
@@ -266,8 +266,8 @@ $light: #fff
     &.changingCol
       cursor: default
 
-      .pgBld
-        &-content
+      .pg-bld
+        &__content
           display: none
 
         &-colSettings
@@ -318,10 +318,10 @@ $light: #fff
         border-color: #56d0fe
         color: #56d0fe
 
-    .pgBld-content
+    .pg-bld__content
       height: 100%
 
-  &-content
+  &__content
     padding: 10px 15px
 
     img
