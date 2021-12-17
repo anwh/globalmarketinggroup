@@ -1,0 +1,20 @@
+{
+  "name": "@globalmarketinggroup/white-form",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "files": [
+    "build"
+  ],
+  "standard": {
+    "ignore": [
+      "node_modules/",
+      "build/"
+    ]
+  }
+}

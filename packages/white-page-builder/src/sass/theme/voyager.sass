@@ -1,0 +1,159 @@
+.pgBld
+  background-color: #f9f9f9
+  border: 1px solid #e4eaec
+  border-radius: 3px
+
+  .svg
+    display: none
+
+  *:not(.mce-ico):before
+    font-family: voyager !important
+    font-style: normal !important
+    font-weight: 400 !important
+    font-variant: normal !important
+    text-transform: none !important
+    line-height: 1
+    speak: none
+
+  &-row,&-col
+    border: 1px solid #e4eaec
+    border-radius: 3px
+
+  &-content,&-col
+    background-color: #f9f9f9
+
+  &-col
+    &-edit, &-del, &-settings
+      opacity: .9
+      transition: opacity .4s
+      border: none
+      height: 30px
+
+      &:hover
+        opacity: 1
+
+      &:before
+        color: #fff
+        font-size: 18px
+        transform: translateZ(-1px)
+
+    &-edit
+      background-color: #22A7F0
+
+      &:before
+        content: "\e010"
+
+    &-del
+      background-color: #FA2A00
+
+      &:before
+        content: "\50"
+
+    &-settings
+      background-color: #76838f
+
+      &:before
+        content: "\4e"
+
+  &-menu-item-add
+    padding: 6px 15px
+    border-radius: 3px
+    background: #2ecc71
+    border: 0
+    opacity: .9
+    color: #fff
+    transition: opacity .4s
+
+    span
+      font-weight: 400
+      font-size: 14px
+      color: #fff
+      margin-left: 4px
+
+    .svg
+      display: none
+
+    &:before
+      font-size: 14px
+      content: "\e06a"
+
+    &:hover
+      opacity: 1
+
+  &-row-menu
+    button
+      padding: 6px 15px
+      border-radius: 3px
+      border: 0
+      opacity: .9
+      color: #fff
+      transition: opacity .4s
+
+      span
+        font-weight: 400
+        font-size: 14px
+        color: inherit
+        margin-left: 4px
+
+      &:before
+        font-size: 14px
+
+      &:hover
+        opacity: 1
+
+    &-settings
+      color: #76838f!important
+
+      span
+        font-size: 15px!important
+        margin-left: 10px!important
+
+      &:before
+        font-size: 18px!important
+        content: "\4e"
+
+    &-column
+      background: #2ecc71
+
+      &:before
+        content: "\e06a"
+
+    &-delete
+      background: #FA2A00
+
+      &:before
+        content: "\50"
+
+    &-edit
+      background: #22A7F0
+
+      &:before
+        content: "\e010"
+
+  &-editor,&-settings,&-colSettings
+    &.show
+      display: flex !important
+
+    &-footer
+      button
+        padding: 6px 15px
+        border-radius: 3px
+        border: 0
+        opacity: .9
+        color: #fff
+        transition: opacity .4s
+
+        span
+          font-weight: 400
+          font-size: 14px
+          color: inherit
+          margin-left: 0
+
+        &:hover
+          opacity: 1
+
+    &-save
+      background: #22A7F0
+
+    &-close
+      background: #FA2A00
