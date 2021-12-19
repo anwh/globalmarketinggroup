@@ -1,9 +1,9 @@
-import PageBuilder from "./classes/page-builder";
+import { Builder } from './classes/builder';
+import { checkSelector } from './helpers';
 
-let id = 0;
-const pageBuilder = {
+export const PageBuilder = {
   editors: {},
-  create: function(selector, options) {
+  create: function (selector, options) {
     try {
       checkSelector(selector);
     } catch (e) {
@@ -11,51 +11,37 @@ const pageBuilder = {
       return false;
     }
 
-    const list = new PageBuilder(selector, options);
-    list._init();
-    this.editors[list.className + "_" + id] = list;
-    id += id;
-    return list;
+    const builder = new Builder(selector, options);
+    builder.init();
+
+    this.editors[options.id] = builder;
   },
-  getContent: function(id) {
+  getContent: function (id) {
     if (this.editors[id]) {
-      return this.editors[id]._getContent();
+      return this.editors[id].getContent();
     } else {
       console.error(`Didn't find plugin with id '${id}'`);
     }
   },
-  rebuild: function(id) {
-    this.editors[id]._rebuild();
-  }
+  rebuild: function (id) {
+    this.editors[id].rebuild();
+  },
 };
 
-function checkSelector(selector) {
-  if (typeof tinymce === "undefined") {
-    throw Error(`PageBuilder: Didn't find tinymce. Please connect tinymce.`);
-  }
-
-  if (selector === undefined || selector.length === 0) {
-    throw Error(`PageBuilder: Didn't find selector`);
-  } else if (selector.length > 1) {
-    throw Error(`PageBuilder: Please use individual selector, not more.
-        You use ` + selector.length + ` selectors`);
-  }
-}
-
-
-if (typeof window === "undefined") {
-  global.pageBuilder = pageBuilder;
+if (typeof window === 'undefined') {
+  global.PageBuilder = PageBuilder;
 } else {
-  window.pageBuilder = pageBuilder;
+  window.PageBuilder = PageBuilder;
 }
 
 if (!Element.prototype.matches) {
-  Element.prototype.matches = Element.prototype.msMatchesSelector ||
+  Element.prototype.matches =
+    Element.prototype.msMatchesSelector ||
     Element.prototype.webkitMatchesSelector;
 }
 
 if (!Element.prototype.closest) {
-  Element.prototype.closest = function(s) {
+  Element.prototype.closest = function (s) {
     let el = this;
 
     do {

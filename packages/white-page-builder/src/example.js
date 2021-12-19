@@ -1,3 +1,5 @@
-import './index.js'
+import { PageBuilder } from './index.js';
 
-pageBuilder.create(document.querySelector('.textarea'))
+PageBuilder.create(document.querySelector('.textarea'), {
+  id: 'content',
+});

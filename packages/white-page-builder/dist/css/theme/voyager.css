@@ -1,0 +1,156 @@
+.pg-bld {
+  background-color: #f9f9f9;
+  border: 1px solid #e4eaec;
+  border-radius: 3px;
+}
+.pg-bld .svg {
+  display: none;
+}
+.pg-bld *:not(.mce-ico):before {
+  font-family: voyager !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1;
+  speak: none;
+}
+.pg-bld__row, .pg-bld-col {
+  border: 1px solid #e4eaec;
+  border-radius: 3px;
+}
+.pg-bld__content, .pg-bld-col {
+  background-color: #f9f9f9;
+}
+.pg-bld-col-edit, .pg-bld-col-del, .pg-bld-col-settings {
+  opacity: 0.9;
+  transition: opacity 0.4s;
+  border: none;
+  height: 30px;
+}
+.pg-bld-col-edit:hover, .pg-bld-col-del:hover, .pg-bld-col-settings:hover {
+  opacity: 1;
+}
+.pg-bld-col-edit:before, .pg-bld-col-del:before, .pg-bld-col-settings:before {
+  color: #fff;
+  font-size: 18px;
+  transform: translateZ(-1px);
+}
+.pg-bld-col-edit {
+  background-color: #22A7F0;
+}
+.pg-bld-col-edit:before {
+  content: "\e010";
+}
+.pg-bld-col-del {
+  background-color: #FA2A00;
+}
+.pg-bld-col-del:before {
+  content: "P";
+}
+.pg-bld-col-settings {
+  background-color: #76838f;
+}
+.pg-bld-col-settings:before {
+  content: "N";
+}
+.pg-bld-menu-item-add {
+  padding: 6px 15px;
+  border-radius: 3px;
+  background: #2ecc71;
+  border: 0;
+  opacity: 0.9;
+  color: #fff;
+  transition: opacity 0.4s;
+}
+.pg-bld-menu-item-add span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  margin-left: 4px;
+}
+.pg-bld-menu-item-add .svg {
+  display: none;
+}
+.pg-bld-menu-item-add:before {
+  font-size: 14px;
+  content: "\e06a";
+}
+.pg-bld-menu-item-add:hover {
+  opacity: 1;
+}
+.pg-bld__row-menu button {
+  padding: 6px 15px;
+  border-radius: 3px;
+  border: 0;
+  opacity: 0.9;
+  color: #fff;
+  transition: opacity 0.4s;
+}
+.pg-bld__row-menu button span {
+  font-weight: 400;
+  font-size: 14px;
+  color: inherit;
+  margin-left: 4px;
+}
+.pg-bld__row-menu button:before {
+  font-size: 14px;
+}
+.pg-bld__row-menu button:hover {
+  opacity: 1;
+}
+.pg-bld__row-menu-settings {
+  color: #76838f !important;
+}
+.pg-bld__row-menu-settings span {
+  font-size: 15px !important;
+  margin-left: 10px !important;
+}
+.pg-bld__row-menu-settings:before {
+  font-size: 18px !important;
+  content: "N";
+}
+.pg-bld__row-menu-column {
+  background: #2ecc71;
+}
+.pg-bld__row-menu-column:before {
+  content: "\e06a";
+}
+.pg-bld__row-menu-delete {
+  background: #FA2A00;
+}
+.pg-bld__row-menu-delete:before {
+  content: "P";
+}
+.pg-bld__row-menu-edit {
+  background: #22A7F0;
+}
+.pg-bld__row-menu-edit:before {
+  content: "\e010";
+}
+.pg-bld-editor.show, .pg-bld-settings.show, .pg-bld-colSettings.show {
+  display: flex !important;
+}
+.pg-bld-editor-footer button, .pg-bld-settings-footer button, .pg-bld-colSettings-footer button {
+  padding: 6px 15px;
+  border-radius: 3px;
+  border: 0;
+  opacity: 0.9;
+  color: #fff;
+  transition: opacity 0.4s;
+}
+.pg-bld-editor-footer button span, .pg-bld-settings-footer button span, .pg-bld-colSettings-footer button span {
+  font-weight: 400;
+  font-size: 14px;
+  color: inherit;
+  margin-left: 0;
+}
+.pg-bld-editor-footer button:hover, .pg-bld-settings-footer button:hover, .pg-bld-colSettings-footer button:hover {
+  opacity: 1;
+}
+.pg-bld-editor-save, .pg-bld-settings-save, .pg-bld-colSettings-save {
+  background: #22A7F0;
+}
+.pg-bld-editor-close, .pg-bld-settings-close, .pg-bld-colSettings-close {
+  background: #FA2A00;
+}
