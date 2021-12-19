@@ -16,5 +16,6 @@
       "node_modules/",
       "build/"
     ]
-  }
+  },
+  "gitHead": "4c8035b327df38c170c80cb82c7962bb8b28481c"
 }

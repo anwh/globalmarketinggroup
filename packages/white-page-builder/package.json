@@ -17,6 +17,7 @@
       "jquery": true
     }
   },
+  "publishConfig": {"access": "public"},
   "browserslist": [
     "> 5%",
     "last 4 versions",
@@ -34,5 +35,6 @@
     "resolve-url-loader": "^4.0.0",
     "sanitize.css": "^11.0.0",
     "tinymce": "^5.0.14"
-  }
+  },
+  "gitHead": "4c8035b327df38c170c80cb82c7962bb8b28481c"
 }
