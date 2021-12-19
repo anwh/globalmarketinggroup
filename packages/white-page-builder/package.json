@@ -1,6 +1,6 @@
 {
   "name": "@globalmarketinggroup/white-page-builder",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "dev": "yarn dev",
     "development": "mix",
@@ -17,7 +17,9 @@
       "jquery": true
     }
   },
-  "publishConfig": {"access": "public"},
+  "publishConfig": {
+    "access": "public"
+  },
   "browserslist": [
     "> 5%",
     "last 4 versions",
